@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <DockPanel Margin="10">
+            <StackPanel DockPanel.Dock="Right" Margin="10,0,0,0">
+                <Button Name="btnAddUser" Click="BtnAddUser_Click">Add user</Button>
+                <Button Name="btnChangeUser" Click="BtnChangeUser_Click" Margin="0,5">Change user</Button>
+                <Button Name="btnDeleteUser" Click="BtnDeleteUser_Click">Delete user</Button>
+            </StackPanel>
+            <ListBox Name="lbUsers" DisplayMemberPath="Name"></ListBox>
+        </DockPanel>
     </Grid>
 </Window>
